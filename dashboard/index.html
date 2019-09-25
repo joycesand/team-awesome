@@ -1,0 +1,418 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    
+    <title>Prudential User Dashboard</title>
+    <meta name="description" content="Prudential User Dashboard">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/css/cs-skin-elastic.css">
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
+    <link rel="stylesheet" href="assets/scss/style.css">
+    <link href="assets/css/lib/vector-map/jqvmap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+        <!-- Left Panel -->
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="./"><img src="images/head.jpg" alt="Logo"></a>
+                <a class="navbar-brand hidden" href="./"><img src="images/logo.png" alt="Logo"></a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="index.html"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
+                    </li>
+                    <h3 class="menu-title">Products</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="menu-icon fa fa-laptop"></i>PruEduSave
+                         </a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-puzzle-piece"></i><a href="tables-data.html">My Premium Payments</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="visa-payments.html">Visa Payments</a></li>
+                            <li><i class="fa fa-bars"></i><a href="register-for-online.html">Register for online Payments</a></li>
+                        
+                          
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="menu-icon fa fa-table"></i>Pru Med</a>
+                        <!--ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-table"></i><a href="tables-basic.html">Basic Table</a></li>
+                            <li><i class="fa fa-table"></i><a href="tables-data.html">Data Table</a></li>
+                        </ul>-->
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="menu-icon fa fa-th"></i>Pru Campaigns</a>
+                        <ul class="sub-menu children dropdown-menu">dropdown
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Basic Form</a></li>
+                            <li><i class="menu-icon fa fa-th"></i><a href="#">Advanced Form</a></li>
+                        </ul>
+                    </li>
+
+                    <h3 class="menu-title">FAQ's</h3><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                        <i class="menu-icon fa fa-question"></i>Chat with us</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-fort-awesome"></i><a href="#">Request for a Feedback</a></li>
+                            <li><i class="menu-icon fa fa-comment"></i><a href="#">Leave a Message</a></li>
+
+                            
+                        </ul>
+                    </li>
+                   
+
+                   
+                    <h3 class="menu-title">Settings</h3><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <i class="menu-icon fa fa-glass"></i>My Account</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="login.html">Login</a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="page-register.html">Register new user</a></li>
+                            <li><i class="menu-icon fa fa-paper-plane"></i><a href="reset.html">Reset Pass</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div id="right-panel" class="right-panel">
+
+        <!-- Header-->
+         <!-- Header-->
+       <header id="header" class="header">
+
+        <div class="header-menu">
+
+            <div class="col-sm-7">
+                <a id="menuToggle" class="menutoggle pull-left"><i class="fa fa fa-tasks"></i></a>
+                <div class="header-left">
+                    <button class="search-trigger"><i class="fa fa-search"></i></button>
+                    <div class="form-inline">
+                        <form class="search-form">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search ..." aria-label="Search">
+                            <button class="search-close" type="submit"><i class="fa fa-close"></i></button>
+                        </form>
+                    </div>
+
+                    <div class="dropdown for-notification">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-bell"></i>
+                        <span class="count bg-danger">5</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="notification">
+                        <p class="red">You have 3 Notification</p>
+                        <a class="dropdown-item media" href="#">
+                            <i class="fa fa-check"></i>
+                            <p>Thank you for paying Instantly.</p>
+                        </a>
+                        <a class="dropdown-item media " href="#">
+                            <i class="fa fa-info"></i>
+                            <p>Dear Customer, your payment of UgShs.120,800 has been received.</p>
+                        </a>
+                        <a class="dropdown-item media" href="#">
+                            <i class="fa fa-warning"></i>
+                            <p>Continue Insuring with  Prudential Uganda.</p>
+                        </a>
+                      </div>
+                    </div>
+
+                    <div class="dropdown for-message">
+                      <button class="btn btn-secondary dropdown-toggle" type="button"
+                            id="message"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="ti-email"></i>
+                        <span class="count bg-primary">3</span>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="message">
+                        <p class="red">You have 4 Mails</p>
+                        <a class="dropdown-item media bg-flat-color-4" href="#">
+                            <span class="photo media-left"><img alt="avatar" src="images/head.jpg"></span>
+                            <span class="message media-body">
+                                <span class="name float-left">Prudential Uganda</span>
+                                <span class="time float-right">Just now</span>
+                                    <p>Dear Customer, Happy New Month! Continue Insuring with Prudential Uganda </p>
+                            </span>
+                        </a>
+                        <a class="dropdown-item media bg-flat-color-4" href="#">
+                            <span class="photo media-left"><img alt="avatar" src="images/user.jpg"></span>
+                            <span class="message media-body">
+                                <span class="name float-left">Norah</span>
+                                <span class="time float-right">5 minutes ago</span>
+                                    <p>Hello Fanny. Thank you for paying Instantly </p>
+                            </span>
+                        </a>
+                        <a class="dropdown-item media bg-flat-color-4" href="#">
+                            <span class="photo media-left"><img alt="avatar" src="images/head.jpg"></span>
+                            <span class="message media-body">
+                                <span class="name float-left">Prudential Uganda</span>
+                                <span class="time float-right">3 days ago</span>
+                                    <p>Our Dear Customer, We glad to inform you that we've shifted from Kampala Boulevard to Zebra Plaza</p>
+                            </span>
+                        </a>
+                        
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                <div class="user-area dropdown float-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="user-avatar rounded-circle" src="images/user.jpg" alt="User Avatar">
+                    </a>
+
+                    <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa- user"></i>Notifications <span class="count">13</span></a>
+
+                            <a class="nav-link" href="#"><i class="fa fa -cog"></i>Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                    </div>
+                </div>
+
+                <div class="language-select dropdown" id="language-select">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown"  id="language" aria-haspopup="true" aria-expanded="true">
+                        <i class="flag-icon flag-icon-ug"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="language" >
+                        <div class="dropdown-item">
+                            <span class="flag-icon flag-icon-ug"></span>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-ke"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-fr"></i>
+                        </div>
+                        <div class="dropdown-item">
+                            <i class="flag-icon flag-icon-it"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </header><!-- /header --><!-- /header -->
+        <!-- Header-->
+
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="page-header float-right">
+                    <div class="page-title">
+                        <ol class="breadcrumb text-right">
+                            <li class="active">Dashboard</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content mt-3">
+
+            <div class="col-sm-12">
+                <div class="alert  alert-success alert-dismissible fade show" role="alert">
+                  <span class="badge badge-pill badge-success">Success</span> You successfully logged in to your account! 
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+
+
+           <div class="col-sm-6 col-lg-4">
+                <div class="card text-white bg-flat-color-4">
+                    <div class="card-body pb-0">
+                        <div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <!---div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div-->
+                        </div>
+                        <h4 class="mb-0">
+                            <span class="count">10</span>
+                        </h4>
+                        <p class="text-light">My Online Payments</p>
+
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                            <canvas id="widgetChart1"></canvas>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!--/.col-->
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-white bg-flat-color-4">
+                    <div class="card-body pb-0">
+                        <div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <!----div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div-->
+                        </div>
+                        <h4 class="mb-0">
+                            <span class="count">10899468</span>
+                        </h4>
+                        <p class="text-light">Amount paid in UgShs</p>
+
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                            <canvas id="widgetChart1"></canvas>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/.col-->
+
+            <div class="col-sm-6 col-lg-4">
+                <div class="card text-white bg-flat-color-4">
+                    <div class="card-body pb-0">
+                        <div class="dropdown float-right">
+                            <button class="btn bg-transparent dropdown-toggle theme-toggle text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <i class="fa fa-cog"></i>
+                            </button>
+                            <!---div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <div class="dropdown-menu-content">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div-->
+                        </div>
+                        <h4 class="mb-0">
+                            <span class="count">40000000</span>
+                        </h4>
+                        <p class="text-light">Amount Left to reach maturity</p>
+
+                    </div>
+
+                        <div class="chart-wrapper px-0" style="height:70px;" height="70">
+                            <canvas id="widgetChart3"></canvas>
+                        </div>
+                </div>
+            </div>
+            <!--/.col-->
+
+          
+           
+
+
+            <div class="col-xl-4 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="ti-money text-success border-success"></i></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Total Payments</div>
+                                <div class="stat-digit">9,012</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-4 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="ti-user text-primary border-primary"></i></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Number of Beneficiaries</div>
+                                <div class="stat-digit">3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="stat-widget-one">
+                            <div class="stat-icon dib"><i class="ti-layout-grid2 text-warning border-warning"></i></div>
+                            <div class="stat-content dib">
+                                <div class="stat-text">Active Period</div>
+                                <div class="stat-digit">3 years</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+           
+
+
+        </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+
+    <!-- Right Panel -->
+
+    <script src="assets/js/vendor/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+
+    <script src="assets/js/lib/chart-js/Chart.bundle.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+    <script src="assets/js/widgets.js"></script>
+    
+   
+   
+
+</body>
+</html>
